@@ -4,33 +4,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Just Tech News</title>
+  <title>Tech Blog</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
   <link rel="stylesheet" href="/stylesheets/style.css">
+
 </head>
 
 <body>
-    <div>
-        <header>
-            <h1>
+    <div >
+        <header class="headerText">
+            <h1 class ="headerH1">
                 <a href ="/"> The Best Tech Blog</a>
             </h1>
-            <nav>
+            <nav class ="headerNav">
+                {{#if loggedIn}}
                 <a href= "/dashboard">Dashboard</a>
-                <button id = "logout" > Logout </button>
+                <button id = "logout" class="button is-small" > Logout </button>
+                {{else}}
                 <a href ="/login"> Login</a>
                 <a href ="/signup"> Sign Up</a>
+                {{/if}}
             </nav>
         </header>
         <main>
             {{{body}}}
         </main>
-        <footer>
-            Thanks for visiting!
-        </footer>
     </div>
-
+  {{#if loggedIn}}
   <script src="/javascript/logout.js"></script>
-
+  {{/if}}
 
 </body>
 
