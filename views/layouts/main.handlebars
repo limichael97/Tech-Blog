@@ -18,9 +18,12 @@
             </h1>
             <nav class ="headerNav">
                 {{#if loggedIn}}
+                <a href= "/">Homepage</a>
                 <a href= "/dashboard">Dashboard</a>
                 <button id = "logout" class="button is-small" > Logout </button>
                 {{else}}
+                <a href= "/">Homepage</a>
+                <a href= "/dashboard">Dashboard</a>
                 <a href ="/login"> Login</a>
                 <a href ="/signup"> Sign Up</a>
                 {{/if}}

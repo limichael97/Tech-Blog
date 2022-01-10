@@ -4,14 +4,16 @@
     <article class="card post">
       <div class="card-header">
         <p class="card-header-title">
-          {{post.title}}
-
+          <a href ="/post/{{post.id}}">{{post.title}}</a>
         </p>
       </div>
+      <div>
+        {{post.description}}
+      </div> <br>
       <div class="meta">
-        by {{post.user.username}}
+        created by {{user.username}} on {{format_date post.created_at}}
         |
-        <a href="/post/{{post.id}}">{{post.comments.length}} comment(s)</a>
+        <a href="/post/{{post.id}}">{{post.comments.length}} {{format_plural "comment" comments.length}}</a>
       </div>
     </article>
   </li>

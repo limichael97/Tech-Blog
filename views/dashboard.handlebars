@@ -1,31 +1,20 @@
-<section>
-  <h2>Create New Post</h2>
+<section class="addPost">
+  <a href="/add-post" class="addColor"> Add a Post </a>
 
-  <form class="new-post-form">
-    <div>
-      <label for="postTitle">Title</label>
-      <input type="text" id="postTitle" name="postTitle" />
-    </div>
-    <div>
-      <label for="postUrl">Link</label>
-      <input id="postUrl" name="postUrl" />
-    </div>
-    <button type="submit" class="button is-primary">Create</button>
-  </form>
 </section>
 
 {{#if posts.length}}
-<section>
+<section class="post">
   <h2>Your Posts</h2>
   <ol>
     {{#each posts as |post|}}
     <li>
       {{> post-info post}}
-      <a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit post</a>
+      <a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit post</a>    
     </li>
     {{/each}}
   </ol>
 </section>
 {{/if}}
 
-<script src="/javascript/add-post.js"></script>
+<script src="/javascript/delete-post.js"></script>
