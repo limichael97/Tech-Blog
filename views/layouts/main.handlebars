@@ -17,15 +17,35 @@
                 <a href ="/"> The Best Tech Blog</a>
             </h1>
             <nav class ="headerNav">
-                {{#if loggedIn}}
-                <a href= "/">Homepage</a>
-                <a href= "/dashboard">Dashboard</a>
-                <button id = "logout" class="button is-small" > Logout </button>
-                {{else}}
-                <a href= "/">Homepage</a>
-                <a href= "/dashboard">Dashboard</a>
-                <a href ="/login"> Login</a>
-                <a href ="/signup"> Sign Up</a>
+                
+                <ul>
+                  {{#if loggedIn}}
+                  <li>
+                    <a href= "/">Homepage</a>
+                  </li>
+                  <li>
+                    <a href= "/dashboard">Dashboard</a>
+                  </li>
+                  <li>
+                    <button id = "logout" class="button is-small" > Logout </button>
+                  </li>
+                  {{else}}
+
+                  <li>
+                    <a href= "/">Homepage</a>
+                  </li>
+                  <li>
+                    <a href= "/dashboard">Dashboard</a>
+                  </li>
+                  <li>
+                    <a href ="/login"> Login</a>
+                  </li>
+                  <li>
+                    <a href ="/signup"> Sign Up</a>
+                  </li>
+
+                </ul>
+
                 {{/if}}
             </nav>
         </header>

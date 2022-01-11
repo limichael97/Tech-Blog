@@ -28,14 +28,40 @@ body {
 }
 
 .center {
-    width: 80%;
-    margin: auto;
+    text-align: center;
 }
 
 .headerH1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding: 10px 22px;
+    font-weight:lighter;
+    font-size:1.5vw;
+}
+
+header nav {
+    margin: 7px 0;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 10px 22px;
+    font-weight:lighter;
+    font-size:1.2vw;
+}
+
+header nav ul li a:hover {
+    background: yellowgreen;
+    border-radius: 15px;
+    color: black;
 }
 
 .commentCenter {
@@ -51,16 +77,117 @@ a:link {
     text-decoration: none;  
 }
 
-
 .addPost {
     width: 80%;
     padding: 20px;
     margin: auto;
     text-align: end;
+}
 
+.addColor:hover {
+    text-shadow: 0 0 10px rgba(0,0,0, 0.5);
 }
 
 .addColor {
     color: rgb(109, 161, 30);
     font-size: larger;
+}
+
+.edit-link {
+    color:yellowgreen;
+    text-align: end;    
+}
+
+.myPosts {
+    font-size: xx-large;
+    font-weight: bold;
+    
+}
+
+.createPost {
+    width: 30%;
+    padding: 20px;
+    margin: auto;
+
+}
+
+.outline {
+    outline-style: solid;
+    outline-color: grey;
+}
+
+.commentColor {
+    color: yellowgreen;
+}
+
+.centerForm {
+    width: 30%;
+    padding: 20px;
+    margin: auto;
+}
+
+.centerForm h2 {
+    font-weight: bold;
+}
+
+.titleInput {
+    width: 100%;
+}
+
+.centerForm label {
+    font-weight: bold;
+}
+
+.post h2 {
+    font-weight: bold;
+}
+
+.editTitle {
+    text-align: center;
+}
+
+.login-form {
+    width: 25%;
+    margin: auto;
+    padding: 20px;
+}
+
+.login-form div label {
+    font-weight: bold;
+}
+
+.login-form div input {
+    width: 90%;
+}
+
+.signupText {
+    width: 23%;
+    margin: auto;
+}
+
+.signupText a{
+
+    color: yellowgreen;
+}
+
+.signup-form {
+    width: 25%;
+    margin: auto;
+    padding: 20px;
+}
+
+.signup-form div label {
+    font-weight: bold;
+}
+
+.signup-form div input {
+    width: 90%;
+}
+
+.new-post-form div label{
+    font-weight: bold;
+}
+
+.createPost h2 {
+    font-weight: bold;
 }

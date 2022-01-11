@@ -13,7 +13,7 @@
       <div class="meta">
         created by {{user.username}} on {{format_date post.created_at}}
         |
-        <a href="/post/{{post.id}}">{{post.comments.length}} {{format_plural "comment" comments.length}}</a>
+        <a href="/post/{{post.id}}" class="commentColor">{{post.comments.length}} {{format_plural "comment" comments.length}}</a>
       </div>
     </article>
   </li>
