@@ -2,7 +2,7 @@
 
 
 # Description
-![image](https://user-images.githubusercontent.com/90745029/148017490-a3cf95fa-18c1-4ac2-9717-283fbad0d92d.png)
+![image](https://user-images.githubusercontent.com/90745029/148863888-f3168855-49f1-46f9-ae89-a5bee5071e0f.png)
 
 CMS-style blog site similar to a Wordpress site, where developers can publish their blog posts and comment on other developers’ posts as well. 
 
